@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Beata's Blog</title>
+    <meta  name="description" content="Example"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logoicon.ico" type="image/x-icon">
+    <link href="css/main.css" rel="stylesheet" type="text/css"/>
+    <script src="js/main.js"></script>
+</head>
+<style>
+</style>
+<body>
+    <div class="main">
+        <div id="title">
+            <h3>Muscle sweetie</h3>
+            <p>KaoKao's GAME</p>
+        </div>
+        <div id="showbox">
+            <div id="showbox2">
+                <div id="face">
+                    <img id="faceimg" src="img/1Face/Face1.png">
+                </div>
+                <div id="makeup">
+                    <img id="makeupimg" src="img/2Makeup/Face1/0-None.png">
+                </div>
+                <div id="stocks">
+                    <img id="stocksimg" src="img/3Stocks/0-None.png">
+                </div>
+                <div id="suit">
+                    <img id="suitimg" src="img/4Suit/0-None.png">
+                </div>
+                <div id="down">
+                    <img id="downimg" src="img/5Down/0-None.png">
+                </div>
+                <div id="up">
+                    <img id="upimg" src="img/6Up/0-None.png">
+                </div>
+                <div id="shoes">
+                    <img id="shoesimg" src="img/7Shoes/0-None.png">
+                </div>
+                <div id="accessories">
+                    <img id="accessoriesimg" src="img/8Accessories/0-None.png">
+                </div>
+                <div id="basicrole">
+                    <img id="basicroleimg" src="img/BasicRole.png">
+                </div>
+            </div>
+        </div>
+        <div id="changebox">
+            <div class="selectbox">
+                <img class="selecticon" src="img/icon/1face.png">
+                <div class="select">
+                    <select id="face-select" onchange="changeMakeUp()">
+                        <option value="1">Face1</option>
+                        <option value="2">Face2</option>
+                        <option value="3">Face3</option>
+                    </select>
+                </div>
+            </div>
+            <div class="selectbox">
+                <img class="selecticon" src="img/icon/2makeup.png">
+                <div class="select">
+                    <select id="makeup-select" onchange="changeMakeUp()">
+                        <option value="0">MAKEUP</option>
+                        <option value="1">Makeup1</option>
+                        <option value="2">Makeup2</option>
+                        <option value="3">Makeup3</option>
+                    </select>
+                </div>
+            </div>
+            <div class="selectbox">
+                <img class="selecticon" src="img/icon/3suit.png">
+                <div class="select">
+                    <select id="suitbut-select" onchange="changeSuit()">
+                        <option value="0">SUIT</option>
+                        <option value="1">Bikini-Blcak</option>
+                        <option value="2">Bikini-White</option>
+                        <option value="3">Bunny-Black</option>
+                        <option value="4">Bunny-White</option>
+                        <option value="5">Dress</option>
+                        <option value="6">Maid</option>
+                        <option value="7">Stewardess</option>
+                        <option value="8">Underware-Black</option>
+                        <option value="9">Underware-White</option>
+                        <option value="10">Wedding</option>
+                    </select>
+                </div>
+            </div>
+            <div class="selectbox">
+                <img class="selecticon" src="img/icon/4up.png">
+                <div class="select">
+                    <select id="up-select" onchange="changeUp()">
+                        <option value="0">UP</option>
+                        <option value="1">JK</option>
+                        <option value="2">Uniform</option>
+                        <option value="3">Nurse</option>
+                        <option value="4">Shawl</option>
+                        <option value="5">Wedding</option>
+                    </select>
+                </div>
+            </div>
+            <div class="selectbox">
+                <img class="selecticon" src="img/icon/5down.png">
+                <div class="select">
+                    <select id="down-select" onchange="changeDown()">
+                        <option value="0">DOWN</option>
+                        <option value="1">Skirt-Black</option>
+                        <option value="2">Skirt-JK</option>
+                        <option value="3">Skirt-Red</option>
+                    </select>
+                </div>
+            </div>
+            <div class="selectbox">
+                <img class="selecticon" src="img/icon/6stocks.png">
+                <div class="select">
+                    <select id="stocks-select" onchange="changeStocks()">
+                        <option value="0">STOCKS</option>
+                        <option value="1">Anklet</option>
+                        <option value="2">GarterBelt-Black</option>
+                        <option value="3">GarterBelt-White</option>
+                        <option value="4">SilkStocking</option>
+                    </select>
+                </div>
+            </div>
+            <div class="selectbox">
+                <img class="selecticon" src="img/icon/7shoes.png">
+                <div class="select">
+                    <select id="shoes-select" onchange="changeShoes()">
+                        <option value="0">SHOES</option>
+                        <option value="1">HighHeels-Black</option>
+                        <option value="2">HighHeels-White</option>
+                        <option value="3">RoundHead</option>
+                        <option value="4">JK</option>
+                        <option value="5">WedgeHeels</option>
+                    </select>
+                </div>
+            </div>
+            <div class="selectbox">
+                <img class="selecticon" src="img/icon/8acessories.png">
+                <div class="select">
+                    <select id="accessories-select" onchange="changeAccessories()">
+                        <option value="0">ACESSORIES</option>
+                        <option value="1">Bag</option>
+                        <option value="2">Bunny-Black</option>
+                        <option value="3">Bunny-White</option>
+                        <option value="4">Carcanet-Black</option>
+                        <option value="5">DressGloves-White</option>
+                        <option value="6">Garlan-White</option>
+                        <option value="7">Hat-Nurse</option>
+                        <option value="8">Hat-Red</option>
+                        <option value="9">Headwear-Maid</option>
+                        <option value="10">Necklace-Flowe</option>
+                        <option value="11">Shawl</option>
+                        <option value="12">Suitcase</option>
+                    </select>
+                </div>
+            </div>
+            <div id="Reflash">
+                <div onclick="random()">
+                    <img class="selecticon" src="img/icon/00random.png">
+                </div>
+                <div onclick="javascript:history.go(-1)">
+                    <img class="selecticon" src="img/icon/00return.png">
+                </div>
+                <div onclick="location.reload()">
+                    <img class="selecticon" src="img/icon/00reflash.png">
+                </div>
+            </div>
+        </div>
+        <div id="link">
+            <div>
+                <p>插画 <a href="https://weibo.com/zuoyingyouju?topnav=1&wvr=6&topsug=1" target="_Blank">kaokao</a></p>
+            </div>
+            <div class="span"></div>
+            <div>
+                <p>程序 <a href="https://weibo.com/2421081052/profile?topnav=1&wvr=6" target="_Blank">beata</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+</footer>
