@@ -7,19 +7,18 @@ body,div,h1,h2,h3,h4,p,a{
     margin: 0px;
 }
 
-@media (min-width: 720px){
+@media (min-width: 850px){
     .main{
         font-size: 100%;
         height: 760px;
         margin: 0px;
         display: grid;
-        grid-row-gap: 20px;
-        grid-template-rows: 12% auto 5%;
+        grid-row-gap: 5%;
+        grid-template-rows: 100px 80%;
         grid-template-columns: 10% 55% 35%;
         grid-template-areas: 
         "header header header"
         "padding showbox changebox"
-        "footer footer footer";
     }
     #title{
         grid-area: header;
@@ -39,20 +38,40 @@ body,div,h1,h2,h3,h4,p,a{
     a, #link p{
         font-size: 1em;
     }
+    #showbox2{
+        width: 420px;
+    }
+    .select{
+        width: 150px;
+        height: 40px;
+    }
+    .selecticon{
+        width: 60px;
+        height: auto;
+        padding-right: 20px;
+    }
+    .selecticon2{
+        width: 60px;
+        height: auto;
+        padding: 6px 11px;
+    }
+    .selectbox{
+        position: relative;
+        left:-30px;
+    }
 }
-@media (min-width: 0px) and (max-width: 719px) {
+@media (min-width: 0px) and (max-width: 849px) {
     .main{
         font-size: 100%;
         height: 790px;
         margin: 0px;
         display: grid;
-        grid-gap: 20px;
-        grid-template-rows: 10% 80% auto 5%;
+        grid-gap: 5%;
+        grid-template-rows: 100px 80% auto;
         grid-template-areas: 
         "header"
         "showbox"
         "changebox"
-        "footer";
     }
     #title{
         grid-area: header;
@@ -82,12 +101,151 @@ body,div,h1,h2,h3,h4,p,a{
     a, #link p{
         font-size: 0.9em;
     }
+    #showbox2{
+        width: 80%;
+    }
+    .select {
+        width: 130px;
+        height: 35px;
+    }
+    .selecticon{
+        width: 50px;
+        height: auto;
+        padding-right: 5px;
+    }
+    .selecticon2{
+        width: 60px;
+        height: auto;
+        padding: 0px 20px;
+    }
+}
+@media (min-width: 850px){
+    #title{
+        padding: 0% 10% 0% 15%;
+        display: grid;
+        grid-gap: 5%;
+        grid-template-columns: 3fr 1.2fr 0.5fr 0.5fr;
+        grid-template-areas: 
+        "logo prohibited kaokao beata"
+    }
+    #titlelogo{
+        grid-area: logo;
+        padding-right: 10%;
+    }
+    #prohibited{
+        grid-area: prohibited;
+    }
+    #kaokao{
+        grid-area: kaokao;
+    }
+    #beata{
+        grid-area:beata;
+    }
+    #title img{
+        display: block;
+        object-fit: cover;
+        height: auto;
+        max-width: 100%;
+    }
+    #title div{
+        display: flex;
+        align-items: flex-end;
+    }
+    #prohibited,#kaokao,#beata{
+        padding-bottom: 10px;
+    }
+}
+@media (min-width: 481px) and (max-width: 849px) {
+    #title{
+        padding: 0% 10% 0% 10%;
+        display: grid;
+        grid-gap: 2%;
+        grid-template-columns: 3fr 1.2fr 0.5fr 0.5fr;
+        grid-template-areas: 
+        "logo prohibited kaokao beata"
+    }
+    #titlelogo{
+        grid-area: logo;
+        padding-right: 5%;
+    }
+    #prohibited{
+        grid-area: prohibited;
+    }
+    #kaokao{
+        grid-area: kaokao;
+    }
+    #beata{
+        grid-area:beata;
+    }
+    #title img{
+        display: block;
+        object-fit: cover;
+        height: auto;
+        max-width: 100%;
+    }
+    #title div{
+        display: flex;
+        align-items: flex-end;
+    }
+    #prohibited,#kaokao,#beata{
+        padding-bottom: 10px;
+    }
+}
+@media (min-width: 0px) and (max-width: 480px) {
+    #title{
+        padding: 3% 1% 1% 8%;
+        display: grid;
+        grid-gap: 1%;
+        grid-template-rows: 1.5fr 1fr;
+        grid-template-columns: 0.8fr 0.5fr 0.5fr;
+        grid-template-areas: 
+        "logo logo logo"
+        "prohibited kaokao beata"
+    }
+    #titlelogo{
+        grid-area: logo;
+    }
+    #prohibited{
+        grid-area: prohibited;
+    }
+    #kaokao{
+        grid-area: kaokao;
+    }
+    #beata{
+        grid-area:beata;
+    }
+    #title div{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+    #title img{
+        display: block;
+        object-fit: cover;
+        height: auto;
+    }
+    #logo{
+        width: 90%;
+    }
+    #prohibited{
+        width: 90%;
+        padding-bottom: 10px;
+        justify-content: flex-end;
+    }
+    #kaokao,#beata{
+        width: 50%;
+        padding-bottom: 10px;
+        justify-content: flex-end;
+    }
+    #kaokao{
+        padding-left: 60%;
+    }
+    #beata{
+        padding-left: 20%;
+    }
 }
 #title{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-color: #ff799b;
 }
 #showbox{
     display: flex;
@@ -95,7 +253,6 @@ body,div,h1,h2,h3,h4,p,a{
     justify-content: center;
 }
 #showbox2{
-    width: 420px;
     height: 100%;
     border-radius: 20px;
     background-color: white;
@@ -106,14 +263,13 @@ body,div,h1,h2,h3,h4,p,a{
     padding-left: 5%;
 }
 #showbox img{
-    /* object-fit: cover; */
-    max-width: 90%;
-    height: auto;
+    position: relative;
+    left:-20px;
+    top: -10px;
+    padding-left: 10px;
 }
 .select {
     display: inline-block;
-    width: 150px;
-    height: 40px;
     position: relative;
     vertical-align: middle;
     padding: 0;
@@ -154,13 +310,12 @@ body,div,h1,h2,h3,h4,p,a{
 .select select:focus {
     outline: none;
 }
-
-#link{
+/* #link{
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-}
+    justify-content: center;
+} */
 .span{
     width: 10px;
 }
@@ -173,13 +328,13 @@ body,div,h1,h2,h3,h4,p,a{
     position: absolute;
 }
 a{
-    color: #999999;
+    color: #000000;
     font-family: "pingfang";
     font-weight: lighter;
     text-decoration: none;
 }
 #link p{
-    color: #999999;
+    color: #000000;
     font-family: "pingfang";
     font-weight: lighter;
     text-decoration: none;
@@ -193,14 +348,20 @@ label{
     justify-content: center;
     align-items: center;
 }
-.selecticon{
-    width: 60px;
-    height: auto;
-    padding-right: 20px;
-}
 #Reflash{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
+/* .block{
+    position:absolute;
+    left:0;
+    visibility:hidden;
+    animation:barrage 15s linear 0s;
+    color: #f84b77;
+    font-family: "pingfang";
+    font-weight: bolder;
+    text-shadow: 0 1px white, 1px 0 white, -1px 0 white, 0 -1px white;
+    /* -webkit-text-stroke: 1px #ffffff;
+} */

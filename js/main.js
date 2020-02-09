@@ -339,3 +339,9 @@ function random(){
 }
 function reTurn(){
 }
+// let style = document.createElement('style');
+// document.head.appendChild(style);
+// let width = window.innerWidth;
+// let from = `from { visibility: visible; -webkit-transform: translateX(${width}px); }`;
+// let to = `to { visibility: visible; -webkit-transform: translateX(-100%); }`;
+// style.sheet.insertRule(`@-webkit-keyframes barrage { ${from} ${to} }`, 0);
