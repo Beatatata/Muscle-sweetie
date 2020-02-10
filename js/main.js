@@ -289,35 +289,67 @@ function changeShoes(x){
         }
     }
 }
-function changeAccessories(){
+function changeAccessories(x){
     element = document.getElementById("accessoriesimg");
-    accessoriesbut = document.getElementById("accessories-select").value;
-    if (accessoriesbut == 0){
-        element.src="img/8Accessories/0-None.png";
-    } else if (accessoriesbut == 1){
-        element.src="img/8Accessories/001.png";
-    } else if (accessoriesbut == 2){
-        element.src="img/8Accessories/002.png";
-    } else if (accessoriesbut == 3){
-        element.src="img/8Accessories/003.png";
-    } else if (accessoriesbut == 4){
-        element.src="img/8Accessories/004.png";
-    } else if (accessoriesbut == 5){
-        element.src="img/8Accessories/005.png";
-    } else if (accessoriesbut == 6){
-        element.src="img/8Accessories/006.png";
-    } else if (accessoriesbut == 7){
-        element.src="img/8Accessories/007.png";
-    } else if (accessoriesbut == 8){
-        element.src="img/8Accessories/008.png";
-    } else if (accessoriesbut == 9){
-        element.src="img/8Accessories/009.png";
-    } else if (accessoriesbut == 10){
-        element.src="img/8Accessories/010.png";
-    } else if (accessoriesbut == 11){
-        element.src="img/8Accessories/011.png";
-    } else if (accessoriesbut == 12){
-        element.src="img/8Accessories/012.png";
+    if (x >= 0){
+        accessoriesbut = document.getElementById("accessories-select");
+        accessoriesbut.value = x;
+        if (x == 0){
+            element.src="img/8Accessories/0-None.png";
+        } else if (x == 1){
+            element.src="img/8Accessories/001.png";
+        } else if (x == 2){
+            element.src="img/8Accessories/002.png";
+        } else if (x == 3){
+            element.src="img/8Accessories/003.png";
+        } else if (x == 4){
+            element.src="img/8Accessories/004.png";
+        } else if (x == 5){
+            element.src="img/8Accessories/005.png";
+        } else if (x == 6){
+            element.src="img/8Accessories/006.png";
+        } else if (x == 7){
+            element.src="img/8Accessories/007.png";
+        } else if (x == 8){
+            element.src="img/8Accessories/008.png";
+        } else if (x == 9){
+            element.src="img/8Accessories/009.png";
+        } else if (x == 10){
+            element.src="img/8Accessories/010.png";
+        } else if (x == 11){
+            element.src="img/8Accessories/011.png";
+        } else if (x == 12){
+            element.src="img/8Accessories/012.png";
+        }
+    } else{
+        accessoriesbut = document.getElementById("accessories-select").value;
+        if (accessoriesbut == 0){
+            element.src="img/8Accessories/0-None.png";
+        } else if (accessoriesbut == 1){
+            element.src="img/8Accessories/001.png";
+        } else if (accessoriesbut == 2){
+            element.src="img/8Accessories/002.png";
+        } else if (accessoriesbut == 3){
+            element.src="img/8Accessories/003.png";
+        } else if (accessoriesbut == 4){
+            element.src="img/8Accessories/004.png";
+        } else if (accessoriesbut == 5){
+            element.src="img/8Accessories/005.png";
+        } else if (accessoriesbut == 6){
+            element.src="img/8Accessories/006.png";
+        } else if (accessoriesbut == 7){
+            element.src="img/8Accessories/007.png";
+        } else if (accessoriesbut == 8){
+            element.src="img/8Accessories/008.png";
+        } else if (accessoriesbut == 9){
+            element.src="img/8Accessories/009.png";
+        } else if (accessoriesbut == 10){
+            element.src="img/8Accessories/010.png";
+        } else if (accessoriesbut == 11){
+            element.src="img/8Accessories/011.png";
+        } else if (accessoriesbut == 12){
+            element.src="img/8Accessories/012.png";
+        }
     }
 }
 function random(){
