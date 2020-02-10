@@ -59,6 +59,10 @@ body,div,h1,h2,h3,h4,p,a{
         position: relative;
         left:-30px;
     }
+    #Reflash{
+        position: relative;
+        left:-30px;
+    }
 }
 @media (min-width: 0px) and (max-width: 849px) {
     .main{
@@ -249,6 +253,7 @@ body,div,h1,h2,h3,h4,p,a{
 }
 #showbox{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -354,14 +359,10 @@ label{
     justify-content: center;
     align-items: center;
 }
-/* .block{
-    position:absolute;
-    left:0;
-    visibility:hidden;
-    animation:barrage 15s linear 0s;
+/* .support{
+    padding-top: 10px;
     color: #f84b77;
     font-family: "pingfang";
-    font-weight: bolder;
+    font-weight: bold;
     text-shadow: 0 1px white, 1px 0 white, -1px 0 white, 0 -1px white;
-    /* -webkit-text-stroke: 1px #ffffff;
 } */
